@@ -1,0 +1,299 @@
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Blackbox AI Layout LTR with Full Width Positioned Form
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white">
+  <div class="flex flex-col md:flex-row h-screen w-screen relative">
+   <!-- Left side (red border) -->
+   <div class="flex flex-col border-4 border-red-600 w-full md:w-1/2 p-4 overflow-auto relative">
+    <div class="flex-1 bg-white rounded-lg shadow p-4 text-left text-sm leading-relaxed font-sans overflow-auto" dir="ltr" style="">
+     <h1 class="flex items-center space-x-2 mb-4 text-base font-normal text-gray-900">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z">
+       </path>
+       <path d="M12 22V12">
+       </path>
+       <path d="M3 7l9 5 9-5">
+       </path>
+      </svg>
+      <span>
+       Blackbox AI
+      </span>
+     </h1>
+     <div class="prose prose-sm max-w-none text-gray-800" dir="ltr">
+      <p>
+       سهولة الاستخدام :
+      </p>
+      <ul>
+       <li>
+        🖱️ واجهة بديهية - سهلة الاستخدام
+       </li>
+       <li>
+        📋 إرشادات واضحة - خطوات مفصلة
+       </li>
+       <li>
+        🔗 عملية سلسة - من الرفع إلى البناء
+       </li>
+       <li>
+        🎯 نتائج فورية - واجهة جاهزة في دقائق
+       </li>
+      </ul>
+      <hr/>
+      <p>
+       جرب النظام الآن :
+      </p>
+      <p>
+       🌐 ارفع صورة الواجهة :
+      </p>
+      <a class="text-blue-700 underline break-words" href="https://sb-25vvn6jf34w1.vercel.run/upload-interface" target="_blank">
+       https://sb-25vvn6jf34w1.vercel.run/upload-interface
+      </a>
+      <ol class="list-decimal list-inside">
+       <li>
+        ارفع لقطة شاشة للواجهة التي تتحدث معي من خلالها .
+       </li>
+       <li>
+        شاهد التحليل الذكي لجميع المكونات .
+       </li>
+       <li>
+        انقر بناء واجهة مشابهة لإنشاء نسخة متطورة .
+       </li>
+       <li>
+        احصل على الكود الجاهز للاستخدام .
+       </li>
+      </ol>
+      <p>
+       🚀 !النظام جاهز لتحليل وبناء أي واجهة ترفعها
+      </p>
+     </div>
+    </div>
+    <div class="flex space-x-4 rtl:space-x-reverse mt-4">
+     <a class="inline-flex items-center justify-center border border-gray-300 rounded-md px-4 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100" href="#">
+      <i class="fas fa-external-link-alt mr-2 rtl:mr-0 rtl:ml-2">
+      </i>
+      Open Website
+     </a>
+     <button class="inline-flex items-center justify-center rounded-md bg-white border border-gray-300 px-4 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100" type="button">
+      <span class="inline-block w-2 h-2 rounded-full bg-green-500 mr-2 rtl:mr-0 rtl:ml-2">
+      </span>
+      Redeploy
+     </button>
+    </div>
+    <form class="absolute bottom-0 left-0 border-4 border-black rounded-md p-4 flex items-center space-x-4 rtl:space-x-reverse bg-white shadow-md w-[calc(100%-2rem)] max-w-full" onsubmit="return false" style="font-size: 0.875rem;">
+     <textarea class="flex-1 resize-none border border-gray-300 rounded-md p-2 text-xs font-mono text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your message..." rows="3" style="font-size: 0.875rem;"></textarea>
+     <button class="inline-flex items-center justify-center rounded-md border border-gray-300 px-5 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100" type="button" style="font-size: 0.875rem;">
+      Claude 4 Sonnet
+     </button>
+     <button aria-label="Send" class="inline-flex items-center justify-center rounded-full bg-black text-white w-10 h-10" type="button" style="font-size: 0.875rem;">
+      <i class="fas fa-arrow-up">
+      </i>
+     </button>
+     <button aria-label="Voice input" class="inline-flex items-center justify-center rounded-full border border-gray-300 w-10 h-10" type="button" style="font-size: 0.875rem;">
+      <i class="fas fa-microphone">
+      </i>
+     </button>
+    </form>
+   </div>
+   <!-- Right side container -->
+   <div class="flex flex-col w-full md:w-1/2 border-2 border-blue-700">
+    <!-- Top bar (black border) -->
+    <div class="flex items-center space-x-2 rtl:space-x-reverse border border-black rounded-md p-2 m-2 bg-white">
+     <button class="flex items-center bg-black text-white rounded-md px-4 py-2 text-sm font-semibold hover:bg-gray-900">
+      <i class="fab fa-github mr-2 rtl:mr-0 rtl:ml-2">
+      </i>
+      Select Repository
+     </button>
+     <button class="bg-white border border-gray-300 rounded-md px-4 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+      Publish
+     </button>
+     <button class="flex items-center bg-white border border-gray-300 rounded-md px-4 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+      <span class="inline-block w-2 h-2 rounded-full bg-green-500 mr-2 rtl:mr-0 rtl:ml-2">
+      </span>
+      Redeploy
+     </button>
+     <button aria-label="Copy" class="bg-white border border-gray-300 rounded-md px-3 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+      <i class="far fa-copy">
+      </i>
+     </button>
+     <button aria-label="Open in new tab" class="bg-white border border-gray-300 rounded-md px-3 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+      <i class="fas fa-external-link-alt">
+      </i>
+     </button>
+     <button class="bg-white border border-gray-300 rounded-md px-4 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+      History
+     </button>
+     <button aria-label="User icon" class="bg-white border border-gray-300 rounded-full px-3 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+      <img alt="User icon with green background" class="rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/f8b66dd7-0ea6-430d-6ea4-c528d9a128ab.jpg" width="24"/>
+     </button>
+    </div>
+    <!-- Middle content (green border) -->
+    <div class="flex flex-1 border border-green-700 m-2 overflow-hidden rounded-md">
+     <!-- Left file tree (gray border) -->
+     <div class="w-1/3 border border-gray-300 p-2 overflow-auto bg-white">
+      <div class="flex items-center space-x-2 rtl:space-x-reverse mb-2 font-mono text-xs font-semibold text-gray-700">
+       <i class="fas fa-desktop">
+       </i>
+       <span>
+        Preview
+       </span>
+       <span class="border-l border-gray-400 pl-2 rtl:pl-0 rtl:pr-2 text-gray-500">
+        Dev View
+       </span>
+      </div>
+      <div class="flex items-center space-x-1 rtl:space-x-reverse mb-2 font-mono text-xs font-semibold text-gray-700">
+       <i class="far fa-file-alt">
+       </i>
+       <span class="uppercase">
+        SANDBOX REMOTE FILESYSTEM
+       </span>
+       <button aria-label="Refresh" class="ml-auto rtl:ml-0 rtl:mr-auto text-gray-500 hover:text-gray-700">
+        <i class="fas fa-sync-alt">
+        </i>
+       </button>
+       <span class="text-gray-400">
+        /ADVANCED_SYSTEM_ROADMAP.md
+       </span>
+      </div>
+      <ul class="font-mono text-xs text-gray-700 list-none pl-4 rtl:pl-0 rtl:pr-4">
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         page.tsx
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="fas fa-folder">
+        </i>
+        <span>
+         lib
+        </span>
+       </li>
+       <ul class="pl-4 rtl:pl-0 rtl:pr-4 text-gray-600 font-mono text-xs list-none">
+        <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+         <i class="far fa-file-code">
+         </i>
+         <span>
+          utils.ts
+         </span>
+        </li>
+       </ul>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         ADVANCED_SYSTEM_ROADMAP.md
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         next-env.d.ts
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         next.config.js
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         package.json
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         postcss.config.js
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         tailwind.config.js
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         TODO.md
+        </span>
+       </li>
+       <li class="mb-1 flex items-center space-x-1 rtl:space-x-reverse cursor-pointer hover:bg-gray-100 rounded px-1 py-0.5">
+        <i class="far fa-file-code">
+        </i>
+        <span>
+         tsconfig.json
+        </span>
+       </li>
+      </ul>
+     </div>
+     <!-- Right code preview (yellow border) -->
+     <div class="flex-1 border border-yellow-300 p-2 overflow-auto bg-white text-xs font-mono text-gray-700">
+      <pre>
+{
+  "name": "advanced-system-roadmap",
+  "version": "1.0.0",
+  "description": "A project that exceeds current market standards and provides significant competitive advantages.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tailwindcss": "^3.0.0"
+  }
+}
+          </pre>
+     </div>
+    </div>
+    <!-- Bottom terminal sessions (orange border) -->
+    <div class="flex border-2 border-orange-400 m-2 rounded-md overflow-hidden">
+     <!-- Left terminal list (purple border) -->
+     <div class="w-1/3 border-4 border-purple-600 p-4 bg-white flex flex-col items-center justify-center text-gray-400 text-sm font-mono space-y-4">
+      <i class="fas fa-terminal text-4xl">
+      </i>
+      <p>
+       No terminals created
+      </p>
+      <button class="inline-flex items-center justify-center border border-gray-300 rounded-md px-4 py-2 text-sm font-normal text-gray-900 hover:bg-gray-100">
+       <i class="fas fa-plus mr-2 rtl:mr-0 rtl:ml-2">
+       </i>
+       Create Terminal
+      </button>
+     </div>
+     <!-- Right terminal view (pink border) -->
+     <div class="flex-1 border-4 border-pink-300 p-8 bg-white flex flex-col items-center justify-center text-gray-400 text-sm font-mono space-y-2">
+      <i class="fas fa-terminal text-5xl">
+      </i>
+      <p>
+       No terminal selected
+      </p>
+      <p class="text-xs text-gray-500">
+       Click on a terminal to open it here
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
